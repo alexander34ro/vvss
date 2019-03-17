@@ -1,3 +1,3 @@
 # vvss
-* Verificarea si Validarea Sistemelor Soft 
-aair2039
+*Verificarea si Validarea Sistemelor Soft*
+`aair2039`
