@@ -1,8 +1,8 @@
-package aair2039MV.salariati.repository.interfaces;
+package aair2039MV.repository.interfaces;
 
 import java.util.List;
 
-import aair2039MV.salariati.model.Employee;
+import aair2039MV.model.Employee;
 
 public interface EmployeeRepositoryInterface {
 	

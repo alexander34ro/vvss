@@ -8,12 +8,12 @@ import aair2039MV.model.Employee;
 import aair2039MV.repository.interfaces.EmployeeRepositoryInterface;
 import aair2039MV.validator.EmployeeValidator;
 
-public class EmployeeMock implements EmployeeRepositoryInterface {
+public class EmployeeCacheRepo implements EmployeeRepositoryInterface {
 
 	private List<Employee> employeeList;
 	private EmployeeValidator employeeValidator;
 	
-	public EmployeeMock() {
+	public EmployeeCacheRepo() {
 		
 		employeeValidator = new EmployeeValidator();
 		employeeList = new ArrayList<Employee>();

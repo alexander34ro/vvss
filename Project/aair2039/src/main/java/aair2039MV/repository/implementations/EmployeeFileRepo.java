@@ -9,7 +9,7 @@ import java.io.*;
 import java.util.ArrayList;
 import java.util.List;
 
-public class EmployeeImpl implements EmployeeRepositoryInterface {
+public class EmployeeFileRepo implements EmployeeRepositoryInterface {
 	
 	private final String employeeDBFile = "employeeDB/employees.txt";
 	private EmployeeValidator employeeValidator = new EmployeeValidator();

@@ -1,10 +1,13 @@
-package aair2039MV.salariati.model;
+package aair2039MV.model;
 
-import salariati.enumeration.DidacticFunction;
-import salariati.exception.EmployeeException;
-import salariati.validator.EmployeeValidator;
+import aair2039MV.enumeration.DidacticFunction;
+import aair2039MV.exception.EmployeeException;
+import aair2039MV.validator.EmployeeValidator;
 
 public class Employee {
+
+	/** The first name of the employee */
+	private String firstName;
 
 	/** The last name of the employee */
 	private String lastName;
@@ -12,11 +15,11 @@ public class Employee {
 	/** The unique id of the employee */
 	private String cnp;
 	
-	/** The didactic function of the employee inside the university */
-	private DidacticFunction function;
+	/** The didactic didacticFunction of the employee inside the university */
+	private DidacticFunction didacticFunction;
 	
 	/** The salary of the employee */
-	private String salary;
+	private double salary;
 	
 	/**
 	 * Default constructor for employee
@@ -24,17 +27,17 @@ public class Employee {
 	public Employee() {
 		this.lastName  = "";
 		this.cnp       = "";
-		this.function  = DidacticFunction.ASISTENT;
-		this.salary    = "";
+		this.didacticFunction = DidacticFunction.ASSISTANT;
+		this.salary    = 0;
 	}
 	
 	/**
 	 * Constructor with fields for employee
 	 */
-	public Employee(String lastName, String cnp, DidacticFunction function, String salary) {
+	public Employee(String lastName, String cnp, DidacticFunction didacticFunction, double salary) {
 		this.lastName  = lastName;
 		this.cnp       = cnp;
-		this.function  = function;
+		this.didacticFunction = didacticFunction;
 		this.salary    = salary;
 	}
 
@@ -71,25 +74,25 @@ public class Employee {
 	}
 
 	/**
-	 * Getter for the employee didactic function
+	 * Getter for the employee didactic didacticFunction
 	 */
-	public DidacticFunction getFunction() {
-		return function;
+	public DidacticFunction getDidacticFunction() {
+		return didacticFunction;
 	}
 
 	/**
-	 * Setter for the employee function
+	 * Setter for the employee didacticFunction
 	 * 
-	 * @param function the function to be set
+	 * @param didacticFunction the didacticFunction to be set
 	 */
-	public void setFunction(DidacticFunction function) {
-		this.function = function;
+	public void setDidacticFunction(DidacticFunction didacticFunction) {
+		this.didacticFunction = didacticFunction;
 	}
 
 	/**
 	 * Getter for the employee salary
 	 */
-	public String getSalary() {
+	public double getSalary() {
 		return salary;
 	}
 
@@ -98,12 +101,12 @@ public class Employee {
 	 * 
 	 * @param salary the salary to be set
 	 */
-	public void setSalary(String salary) {
+	public void setSalary(double salary) {
 		this.salary = salary;
 	}
 	
 	/**
-	 * toString function for employee
+	 * toString didacticFunction for employee
 	 */
 	@Override
 	public String toString() {
@@ -111,20 +114,20 @@ public class Employee {
 		
 		employee += lastName + ";";
 		employee += cnp + ";";
-		employee += function.toString() + ";";
+		employee += didacticFunction.toString() + ";";
 		employee += salary;
 		
 		return employee;
 	}
 	
 	/**
-	 * equals function for employee
+	 * equals didacticFunction for employee
 	 */
 	public boolean equals(Employee comparableEmployee) {
 		boolean hasSameLastName  = this.lastName.equals(comparableEmployee.getLastName()),
 				hasSameCNP       = this.cnp.equals(comparableEmployee.getCnp()),
-				hasSameFunction  = this.function.equals(comparableEmployee.getFunction()),
-				hasSameSalary    = this.salary.equals(comparableEmployee.getSalary());
+				hasSameFunction  = this.didacticFunction.equals(comparableEmployee.getDidacticFunction()),
+				hasSameSalary    = this.salary == comparableEmployee.getSalary();
 		return hasSameLastName && hasSameCNP && hasSameFunction && hasSameSalary;
 	}
 	
@@ -151,14 +154,14 @@ public class Employee {
 			employee.setLastName(attributes[1]);
 			employee.setCnp(attributes[2]);
 			
-			if(attributes[3].equals("ASISTENT"))
-				employee.setFunction(DidacticFunction.ASISTENT);
+			if(attributes[3].equals("ASSISTANT"))
+				employee.setDidacticFunction(DidacticFunction.ASSISTANT);
 			if(attributes[3].equals("LECTURER"))
-				employee.setFunction(DidacticFunction.LECTURER);
+				employee.setDidacticFunction(DidacticFunction.LECTURER);
 			if(attributes[3].equals("TEACHER"))
-				employee.setFunction(DidacticFunction.TEACHER);
+				employee.setDidacticFunction(DidacticFunction.TEACHER);
 			
-			employee.setSalary(attributes[4]);
+			employee.setSalary(Double.parseDouble(attributes[4]));
 			
 			if( !validator.isValid(employee) ) {
 				throw new EmployeeException("Invalid line at: " + line);
@@ -168,4 +171,11 @@ public class Employee {
 		return employee;
 	}
 
+	public String getFirstName() {
+		return firstName;
+	}
+
+	public void setFirstName(String firstName) {
+		this.firstName = firstName;
+	}
 }

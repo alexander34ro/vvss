@@ -1,5 +1,5 @@
-package aair2039MV.salariati.enumeration;
+package aair2039MV.enumeration;
 
 public enum DidacticFunction {
-	ASISTENT, LECTURER, TEACHER;
+	ASSISTANT, LECTURER, TEACHER, READER;
 }

@@ -1,4 +1,4 @@
-package aair2039MV.salariati.exception;
+package aair2039MV.exception;
 
 public class EmployeeException extends Exception {
 
