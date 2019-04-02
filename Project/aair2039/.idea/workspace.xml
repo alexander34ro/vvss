@@ -1,21 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="3db52f70-f7e8-4888-a904-32980418b3af" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../../1_Inspectare__10__19_03/Lab01_ReviewReport.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/../../1_Inspectare__10__19_03/Lab01_ReviewReport.xlsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../2-ProiectSalariati/ProiectSalariati/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../2-ProiectSalariati/ProiectSalariati/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/aair2039MV/controller/EmployeeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/aair2039MV/controller/EmployeeController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/aair2039MV/enumeration/DidacticFunction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/aair2039MV/enumeration/DidacticFunction.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/aair2039MV/exception/EmployeeException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/aair2039MV/exception/EmployeeException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/aair2039MV/main/StartApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/aair2039MV/main/StartApp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/aair2039MV/model/Employee.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/aair2039MV/model/Employee.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/aair2039MV/repository/implementations/EmployeeFileRepo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/aair2039MV/repository/implementations/EmployeeFileRepo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/aair2039MV/repository/interfaces/EmployeeRepositoryInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/aair2039MV/repository/interfaces/EmployeeRepositoryInterface.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/aair2039MV/repository/mock/EmployeeCacheRepo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/aair2039MV/repository/mock/EmployeeCacheRepo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/aair2039MV/validator/EmployeeValidator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/aair2039MV/validator/EmployeeValidator.java" afterDir="false" />
-    </list>
+    <list default="true" id="3db52f70-f7e8-4888-a904-32980418b3af" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -135,8 +121,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/aair2039MV/AppTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="429">
-              <caret line="60" column="93" selection-start-line="60" selection-start-column="93" selection-end-line="60" selection-end-column="93" />
+            <state relative-caret-position="255">
+              <caret line="15" column="1" selection-start-line="15" selection-start-column="1" selection-end-line="15" selection-end-column="1" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -384,7 +370,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1554219828681" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1554220093657" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -518,20 +504,11 @@
       <updated>1552833275531</updated>
       <workItem from="1552833281823" duration="277000" />
       <workItem from="1553012692941" duration="4792000" />
-      <workItem from="1554215514050" duration="3344000" />
+      <workItem from="1554215514050" duration="3693000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="AppTest_shouldAnswerWithTrue - 2019.04.02 at 18h 34m 44s.xml">
-      <configuration name="AppTest.shouldAnswerWithTrue" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="AppTest_shouldAnswerWithTrue - 2019.04.02 at 18h 36m 49s.xml">
-      <configuration name="AppTest.shouldAnswerWithTrue" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="AppTest_nameIsString - 2019.04.02 at 18h 36m 54s.xml">
-      <configuration name="AppTest.nameIsString" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="AppTest_nameIsString - 2019.04.02 at 18h 38m 03s.xml">
       <configuration name="AppTest.nameIsString" configurationId="JUnit" />
     </history-entry>
@@ -547,9 +524,24 @@
     <history-entry file="AppTest_nameIsString2 - 2019.04.02 at 18h 40m 30s.xml">
       <configuration name="AppTest.nameIsString2" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="AppTest_nameIsString2 - 2019.04.02 at 18h 41m 37s.xml">
+      <configuration name="AppTest.nameIsString2" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="AppTest_TC3 - 2019.04.02 at 18h 41m 53s.xml">
+      <configuration name="AppTest.TC3" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="AppTest_TC4 - 2019.04.02 at 18h 41m 59s.xml">
+      <configuration name="AppTest.TC4" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="AppTest_TC4 - 2019.04.02 at 18h 42m 04s.xml">
+      <configuration name="AppTest.TC4" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="AppTest - 2019.04.02 at 18h 42m 09s.xml">
+      <configuration name="AppTest" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="8413000" />
+    <option name="totallyTimeSpent" value="8762000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1454" height="878" extended-state="6" />
@@ -846,8 +838,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/aair2039MV/AppTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="429">
-          <caret line="60" column="93" selection-start-line="60" selection-start-column="93" selection-end-line="60" selection-end-column="93" />
+        <state relative-caret-position="255">
+          <caret line="15" column="1" selection-start-line="15" selection-start-column="1" selection-end-line="15" selection-end-column="1" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
