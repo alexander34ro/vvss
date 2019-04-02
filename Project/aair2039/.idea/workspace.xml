@@ -121,8 +121,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/aair2039MV/AppTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="15" column="1" selection-start-line="15" selection-start-column="1" selection-end-line="15" selection-end-column="1" />
+            <state relative-caret-position="136">
+              <caret line="23" column="23" selection-start-line="23" selection-start-column="23" selection-end-line="23" selection-end-column="23" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -370,7 +370,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1554222771309" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1554223314542" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -504,7 +504,7 @@
       <updated>1552833275531</updated>
       <workItem from="1552833281823" duration="277000" />
       <workItem from="1553012692941" duration="4792000" />
-      <workItem from="1554215514050" duration="3979000" />
+      <workItem from="1554215514050" duration="4391000" />
     </task>
     <servers />
   </component>
@@ -541,7 +541,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="9048000" />
+    <option name="totallyTimeSpent" value="9460000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1452" height="879" extended-state="0" />
@@ -838,8 +838,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/aair2039MV/AppTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="1" selection-start-line="15" selection-start-column="1" selection-end-line="15" selection-end-column="1" />
+        <state relative-caret-position="136">
+          <caret line="23" column="23" selection-start-line="23" selection-start-column="23" selection-end-line="23" selection-end-column="23" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
