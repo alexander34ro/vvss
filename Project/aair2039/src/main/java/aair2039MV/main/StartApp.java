@@ -24,6 +24,7 @@ public class StartApp {
 		System.out.println("-----------------------------------------");
 		
 		Employee employee = new Employee("LastName", "1234567894321", DidacticFunction.ASSISTANT, 3400);
+		employeeController.modifyDidacticFunction(employee, "");
 		employeeController.addEmployee(employee);
 		
 		for(Employee _employee : employeeController.getEmployeesList())

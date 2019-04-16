@@ -50,6 +50,7 @@ public class EmployeeCacheRepo implements EmployeeRepositoryInterface {
 	@Override
 	public void modifyEmployee(Employee oldEmployee, Employee newEmployee) {
 		// TODO Auto-generated method stub
+		oldEmployee.setDidacticFunction(newEmployee.getDidacticFunction());
 	}
 
 	@Override
