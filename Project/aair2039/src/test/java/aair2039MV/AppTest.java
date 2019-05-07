@@ -1,5 +1,6 @@
 package aair2039MV;
 
+import static org.junit.Assert.assertArrayEquals;
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertTrue;
 
@@ -10,13 +11,17 @@ import aair2039MV.repository.interfaces.EmployeeRepositoryInterface;
 import aair2039MV.repository.mock.EmployeeCacheRepo;
 import org.junit.Test;
 
+import java.util.ArrayList;
+import java.util.List;
+import java.util.stream.Collectors;
+
 /**
  * Unit test for simple App.
  */
 public class AppTest 
 {
     @Test
-    public void TC1() {
+    public void F01_TC01() {
         EmployeeRepositoryInterface employeesRepository = new EmployeeCacheRepo();
         assertEquals(6, employeesRepository.getEmployeeList().size());
 
@@ -26,7 +31,7 @@ public class AppTest
     }
 
     @Test
-    public void TC2() {
+    public void F01_TC02() {
         EmployeeRepositoryInterface employeesRepository = new EmployeeCacheRepo();
         assertEquals(6, employeesRepository.getEmployeeList().size());
 
@@ -36,7 +41,7 @@ public class AppTest
     }
 
     @Test
-    public void TC3() {
+    public void F01_TC03() {
         EmployeeRepositoryInterface employeesRepository = new EmployeeCacheRepo();
         assertEquals(6, employeesRepository.getEmployeeList().size());
 
@@ -46,7 +51,7 @@ public class AppTest
     }
 
     @Test
-    public void TC4() {
+    public void F01_TC04() {
         EmployeeRepositoryInterface employeesRepository = new EmployeeCacheRepo();
         assertEquals(6, employeesRepository.getEmployeeList().size());
 
@@ -101,5 +106,34 @@ public class AppTest
 
         employeeController.modifyDidacticFunction(employee, "ASSISTANT");
         assertEquals(DidacticFunction.ASSISTANT, employee.getDidacticFunction());
+    }
+
+    @Test
+    public void F03_TC01() {
+        EmployeeRepositoryInterface employeesRepository = new EmployeeCacheRepo();
+        EmployeeController employeeController = new EmployeeController(employeesRepository);
+
+        ArrayList<Employee> original = (ArrayList<Employee>) employeeController.getEmployeesList();
+        ArrayList<Employee> sorted = (ArrayList<Employee>) employeeController.getEmployeesList().stream().sorted().collect(Collectors.toList());
+
+        for (int i = 0; i < original.size(); i++) {
+            assertEquals(original.get(i).getSalary(), sorted.get(i).getSalary(), 0.1);
+            assertEquals(original.get(i).getCnp(), sorted.get(i).getCnp());
+        }
+    }
+
+    @Test
+    public void F03_TC02() {
+        EmployeeRepositoryInterface employeesRepository = new EmployeeCacheRepo();
+        EmployeeController employeeController = new EmployeeController(employeesRepository);
+
+        employeeController.getEmployeesList().get(0).setCnp("0000");
+        ArrayList<Employee> original = (ArrayList<Employee>) employeeController.getEmployeesList();
+        ArrayList<Employee> sorted = (ArrayList<Employee>) employeeController.getEmployeesList().stream().sorted().collect(Collectors.toList());
+
+        for (int i = 0; i < original.size(); i++) {
+            assertEquals(original.get(i).getSalary(), sorted.get(i).getSalary(), 0.1);
+            assertEquals(original.get(i).getCnp(), sorted.get(i).getCnp());
+        }
     }
 }

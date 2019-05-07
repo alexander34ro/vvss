@@ -1,6 +1,8 @@
 package aair2039MV.controller;
 
+import java.util.Comparator;
 import java.util.List;
+import java.util.stream.Collectors;
 
 import aair2039MV.enumeration.DidacticFunction;
 import aair2039MV.model.Employee;
@@ -19,7 +21,7 @@ public class EmployeeController {
 	}
 	
 	public List<Employee> getEmployeesList() {
-		return employeeRepository.getEmployeeList();
+		return employeeRepository.getEmployeeList().stream().sorted().collect(Collectors.toList());
 	}
 
 	public List<Employee> getSortedEmployeesList() {

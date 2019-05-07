@@ -13,12 +13,10 @@ import aair2039MV.validator.EmployeeValidator;
 //F03.	 afisarea salariatilor ordonati descrescator dupa salariu si crescator dupa varsta (CNP).
 
 public class StartApp {
+    public static EmployeeRepositoryInterface employeesRepository = new EmployeeCacheRepo();
+    public static EmployeeController employeeController = new EmployeeController(employeesRepository);
 
 	public static void main(String[] args) {
-		
-		EmployeeRepositoryInterface employeesRepository = new EmployeeCacheRepo();
-		EmployeeController employeeController = new EmployeeController(employeesRepository);
-		
 		for(Employee _employee : employeeController.getEmployeesList())
 			System.out.println(_employee.toString());
 		System.out.println("-----------------------------------------");
@@ -29,6 +27,7 @@ public class StartApp {
 		
 		for(Employee _employee : employeeController.getEmployeesList())
 			System.out.println(_employee.toString());
+		System.out.println("-----------------------------------------");
 		
 		EmployeeValidator validator = new EmployeeValidator();
 		System.out.println( validator.isValid(new Employee("Last-Name", "1234567894322", DidacticFunction.TEACHER, 3400)) );

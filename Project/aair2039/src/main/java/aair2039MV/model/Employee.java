@@ -4,7 +4,7 @@ import aair2039MV.enumeration.DidacticFunction;
 import aair2039MV.exception.EmployeeException;
 import aair2039MV.validator.EmployeeValidator;
 
-public class Employee {
+public class Employee implements Comparable<Employee> {
 
 	/** The first name of the employee */
 	private String firstName;
@@ -177,5 +177,18 @@ public class Employee {
 
 	public void setFirstName(String firstName) {
 		this.firstName = firstName;
+	}
+
+	@Override
+	public int compareTo(Employee o) {
+		int answer;
+		if (o.salary == salary) {
+			return -o.getCnp().compareTo(cnp);
+		} else if (o.salary > salary) {
+			answer = 1;
+		} else {
+			answer = -1;
+		}
+		return answer;
 	}
 }

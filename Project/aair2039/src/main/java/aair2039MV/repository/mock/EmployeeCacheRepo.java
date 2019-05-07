@@ -19,10 +19,10 @@ public class EmployeeCacheRepo implements EmployeeRepositoryInterface {
 		employeeList = new ArrayList<Employee>();
 		
 		Employee Ionel   = new Employee("Pacura-ru", "1234567890876", DidacticFunction.ASSISTANT, 2500);
-		Employee Mihai   = new Employee("Dumitrescu", "1234567890876", DidacticFunction.LECTURER, 2500);
-		Employee Ionela  = new Employee("Ionescu", "1234567890876", DidacticFunction.LECTURER, 2500);
-		Employee Mihaela = new Employee("Pacuraru", "1234567890876", DidacticFunction.ASSISTANT, 2500);
-		Employee Vasile  = new Employee("Georgescu", "1234567890876", DidacticFunction.TEACHER,  2500);
+		Employee Mihai   = new Employee("Dumitrescu", "1234567890876", DidacticFunction.LECTURER, 20500);
+		Employee Ionela  = new Employee("Ionescu", "2234567890876", DidacticFunction.LECTURER, 2500);
+		Employee Mihaela = new Employee("Pacuraru", "8234567890876", DidacticFunction.ASSISTANT, 2500);
+		Employee Vasile  = new Employee("Georgescu", "3234567890876", DidacticFunction.TEACHER,  25500);
 		Employee Marin   = new Employee("Puscas", "1234567890876", DidacticFunction.TEACHER,  2500);
 		
 		employeeList.add( Ionel );
